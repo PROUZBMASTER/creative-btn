@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.btn1:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -10px;
+  right: -10px;
+  border-bottom: 4px solid rgba(4, 201, 7, 0.824);
+  border-right: 4px solid rgba(4, 201, 7, 0.824);
+  transition: all 0.30s;
+}
+.display {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+}
+
+
+
+.btn1:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  left: -10px;
+  border-top: 4px solid rgba(4, 201, 7, 0.824);
+  border-left: 4px solid rgba(4, 201, 7, 0.824);
+  transition: all 0.30s;
+}
+.btn1 {
+  border: none;
+  padding: 18px 40px;
+  background: rgba(4, 201, 7, 0.824);
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+.btn1:hover:before,
+.btn1:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
